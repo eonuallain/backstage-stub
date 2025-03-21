@@ -1,1 +1,3 @@
 # backstage-stub
+
+## Project stub
