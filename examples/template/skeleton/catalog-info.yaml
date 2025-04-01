@@ -2,10 +2,9 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: ${{ values.name | dump }}
-  description: ${{ values.description | dump }}
   annotations:
-    github.com/project-slug: ${{ values.destination.owner | dump }} + "/" + ${{ values.destination.repo | dump }}
+    github.com/project-slug: ${{ values.repoOrg }}/${{ values.repoSlug }}
 spec:
   type: service
-  owner: user:guest
+  owner: ${{ values.repoOrg }}
   lifecycle: experimental
