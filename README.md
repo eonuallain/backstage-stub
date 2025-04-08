@@ -10,3 +10,9 @@ nvm use global v20
 yarn install
 yarn dev
 ```
+
+```sh
+yarn add @backstage/plugin-github-actions
+```
+
+https://www.npmjs.com/package/@backstage-community/plugin-github-actions
